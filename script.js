@@ -1,4 +1,4 @@
-zkouzka
+
 $(document).ready(function () {
 
   $("#potreby, #dezerty, #napoje, #rychle, .milaInfo, .cornyInfo, .snickersInfo, .twixInfo, .bountyInfo, .mentosInfo, .bebeInfo, .tictacInfo ").hide();
