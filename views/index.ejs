@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--<link rel="stylesheet" type="text/css" href="index.css">-->
+    <title>Dotykový panel</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+    <style>
+        body{
+            font-family: "Gill Sans", sans-serif;
+            background-color: #ffffff;
+            font-weight: bold;
+        }
+        form{
+            margin-bottom: 15px;
+            margin-top: 18%;
+            margin-left: 45%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="/createuser" method="POST">
+        <label for="name">Jméno a příjmení:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="pass">Heslo:</label><br>
+        <input type="text" id="pass" name="pass">
+      </form>
+    <a href="panel"><button>Vybrat si jídlo</button></a>
+</body>
+
+</html>

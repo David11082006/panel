@@ -1,0 +1,329 @@
+body {
+    background-color: #ffffff;
+    font-family: Verdana, sans-serif;
+    font-weight: 35px;
+    text-align: center;
+}
+
+
+
+#nav {
+    float: left;
+    width: 160px;
+    height: 800px;
+}
+
+#navSnacks {
+    background: rgb(255, 186, 9);
+    background: linear-gradient(90deg, rgba(255, 186, 9, 1) 32%, rgba(238, 238, 24, 1) 100%);
+    border-radius: 6px;
+    margin-top: -22px;
+    margin-bottom: 22px;
+    font-size: 25px;
+    width: 150px;
+    height: 100px;
+}
+
+#navDeserts {
+    background: rgb(246, 236, 255);
+    background: radial-gradient(circle, rgb(255, 230, 191) 0%, rgb(255, 149, 199) 100%);
+    border-radius: 6px;
+    margin-top: -22px;
+    margin-bottom: 22px;
+    font-size: 25px;
+    width: 150px;
+    height: 100px;
+}
+
+
+#navDrinks {
+    background: rgb(255, 186, 9);
+    background: linear-gradient(22deg, rgba(118, 176, 255, 1) 0%, rgba(130, 255, 169, 1) 100%);
+    border-radius: 6px;
+    margin-top: -22px;
+    margin-bottom: 22px;
+    font-size: 25px;
+    width: 150px;
+    height: 100px;
+}
+
+
+#navFastFood {
+    background: rgb(246, 236, 255);
+    background: rgb(255, 186, 9);
+    background: linear-gradient(22deg, rgba(97, 255, 85, 1) 0%, rgba(226, 255, 101, 1) 100%);
+    border-radius: 6px;
+    margin-top: -22px;
+    margin-bottom: 22px;
+    font-size: 25px;
+    width: 150px;
+    height: 100px;
+}
+
+#navPotreby {
+    background: rgb(241, 206, 255);
+    background: radial-gradient(circle, rgba(241, 206, 255, 1) 0%, rgba(255, 151, 247, 1) 100%);
+    border-radius: 6px;
+    margin-top: -22px;
+    margin-bottom: 22px;
+    font-size: 25px;
+    width: 150px;
+    height: 100px;
+}
+
+/*uvedomit si vysku full HD rozliseni */
+.navItem {
+    width: 183px;
+    height: 168px;
+
+}
+
+#content {
+    float: left;
+    width: 1270px;
+    height: 800px;
+    margin-top: 13px;
+}
+
+.snacksItem {
+    float: left;
+    width: 307px;
+    /*307*/
+    height: 300px;
+    background: rgb(255, 186, 9);
+    background: linear-gradient(90deg, rgba(255, 186, 9, 1) 32%, rgba(238, 238, 24, 1) 100%);
+    border-radius: 6px;
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+.dezetryItem {
+    float: left;
+    width: 307px;
+    height: 300px;
+    background: rgb(246, 236, 255);
+    background: radial-gradient(circle, rgb(255, 230, 191) 0%, rgb(255, 149, 199) 100%);
+    border-radius: 6px;
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+.napojeItem {
+    float: left;
+    width: 307px;
+    height: 300px;
+    background: rgb(255, 186, 9);
+    background: linear-gradient(22deg, rgba(118, 176, 255, 1) 0%, rgba(130, 255, 169, 1) 100%);
+    border-radius: 6px;
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+.rychleItem {
+    float: left;
+    width: 307px;
+    height: 300px;
+    background: rgb(255, 186, 9);
+    background: linear-gradient(22deg, rgba(97, 255, 85, 1) 0%, rgba(226, 255, 101, 1) 100%);
+    border-radius: 6px;
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+#snacks {
+    background: rgb(255, 186, 9);
+    background: linear-gradient(90deg, rgba(255, 186, 9, 1) 32%, rgba(238, 238, 24, 1) 100%);
+    border-radius: 6px;
+}
+
+#dezerty {
+    background: rgb(246, 255, 89);
+    background: radial-gradient(circle, rgba(246, 255, 89, 1) 0%, rgba(255, 128, 128, 1) 100%);
+    border-radius: 6px;
+}
+
+#napoje {
+    background: rgb(118, 176, 255);
+    background: linear-gradient(22deg, rgba(118, 176, 255, 1) 0%, rgba(130, 255, 169, 1) 100%);
+    border-radius: 6px;
+}
+
+#rychle {
+    background: rgb(97, 255, 85);
+    background: linear-gradient(22deg, rgba(97, 255, 85, 1) 0%, rgba(226, 255, 101, 1) 100%);
+    border-radius: 6px;
+}
+
+.img {
+    width: 70px;
+    height: 61px;
+    margin-left: 6px;
+    margin-top: -57px;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.h1buf {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #ffd904;
+}
+
+.imgli {
+    width: 159px;
+    height: 140px;
+    margin-top: -30px;
+}
+
+.cena {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    margin-left: 55px;
+    position: center;
+    font-size: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-top: -14px;
+}
+
+.kofola {
+    width: 33px;
+}
+
+.imgcorny {
+    width: 159px;
+    height: 84px;
+    margin-top: -13px;
+}
+
+.imgmentos {
+    width: 159px;
+    height: 100px;
+    margin-top: 9px;
+}
+
+.imgvetrnik {
+    width: 159px;
+    height: 126px;
+    margin-top: -10px;
+
+}
+
+.imgtictac {
+    width: 130px;
+    height: 124px;
+    margin-top: -13px;
+}
+
+.imgbebe {
+    height: 142px;
+    width: 221px;
+    margin-top: -34px;
+}
+
+.imgpoliv {
+    height: 140px;
+    width: 111px;
+}
+
+.cenacorny {
+    margin-top: 73px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    margin-left: 56px;
+    position: center;
+    font-size: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-top: 23px;
+}
+
+/* SNACKS INFOOOOO */
+
+
+.snacksInfo {
+    background-color: #ff9422;
+    position: absolute;
+    z-index: 100;
+    width: 18%;
+    border-radius: 29px;
+    border-color: #db763a;
+    border-style: solid;
+    border-width: 5px;
+    bottom: 0;
+    right: 0;
+    margin-right: 25px;
+    margin-bottom: 50px;
+}
+
+/* 
+/* DEZERTY INFOOO */
+
+.dezertsInfo {
+    background-color: #ff81c8;
+    position: absolute;
+    z-index: 100;
+    width: 18%;
+    border-radius: 29px;
+    border-color: #ee49a6;
+    border-style: solid;
+    border-width: 5px;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+
+/* NAPOJE INFOOOOO */
+
+.napojeInfo {
+    background-color: #61f4e7;
+    position: absolute;
+    z-index: 100;
+    width: 18%;
+    border-radius: 29px;
+    border-color: #31b4d2;
+    border-style: solid;
+    border-width: 5px;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+/* RYCHLE INFOOOOOOOO */
+
+.rychleInfo {
+    background-color: #60f454;
+    position: absolute;
+    z-index: 100;
+    width: 18%;
+    border-radius: 29px;
+    border-color: #19a542;
+    border-style: solid;
+    border-width: 5px;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+
+.ost {
+    font-size: 30px;
+    background: #fffb00;
+    border-radius: 25px;
+    height: auto;
+}
