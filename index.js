@@ -20,7 +20,7 @@ var mysql = require('mysql2');
 var con = mysql.createConnection({
   host: "192.168.1.161",
   user: "sofia.skoliar",
-  password: "S472452529s",
+  password: "asdf1234456789",
   database:"sofia.skoliar",
   port: 3001
 });
