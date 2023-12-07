@@ -7,6 +7,7 @@ const path = require('path');//pro manipulaci s cestami, ať už se jedná o abs
 const bodyParser = require('body-parser');//imort bodyParseru
 app.use(bodyParser.urlencoded({ extended: false }));//dekoduje data poslana pres POST
 
+/*fdfsf*/
 
 app.use(express.static(path.join(__dirname, 'scripts')))
 app.use(express.static(path.join(__dirname, 'styles')))
