@@ -36,7 +36,7 @@ app.get('/', (req, res) => {//home routa
 
     con.connect(function(err) {
         if (err) throw err;
-        con.query("SELECT * FROM timetable", function (err, result, fields) {
+        con.query("SELECT * FROM users", function (err, result, fields) {
           if (err) throw err;
           console.log(result);
           res.render('index', { result });
@@ -72,7 +72,7 @@ app.listen(port, () => {//spustni serveru
   app.post('/createuser', function (request, response, next) {
     console.log(request.body)
       // SQL dotaz pro vložení dat do databáze
-      var sql = `INSERT INTO users (fname, lname) VALUES ('${request.body.fname}', '${request.body.lname}')`;
+      var sql = `INSERT INTO users (fname, lname, id, mark) VALUES ('${request.body.id}', '${request.body.fname}', '${request.body.lname}', '${request.body.mark}' )`;
      
       con.query(sql, (error, results, fields) => {
         if (error) {
