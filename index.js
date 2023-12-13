@@ -72,7 +72,7 @@ app.listen(port, () => {//spustni serveru
   app.post('/createuser', function (request, response, next) {
     console.log(request.body)
       // SQL dotaz pro vložení dat do databáze
-      var sql = `INSERT INTO users (fname, lname, id, mark) VALUES ('${request.body.id}', '${request.body.fname}', '${request.body.lname}', '${request.body.mark}' )`;
+      var sql = `INSERT INTO users (fname, lname, mark) VALUES ('${request.body.fname}', '${request.body.lname}', '${request.body.mark}' )`;
      
       con.query(sql, (error, results, fields) => {
         if (error) {
