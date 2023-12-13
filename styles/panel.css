@@ -319,6 +319,12 @@ h1 {
     margin-right: 20px;
     margin-bottom: 50px;
 }
+.imgflorida {
+    height: 130px;
+    width: 230px;
+    margin-top: -15px;
+    margin-left: -15px;
+}
 
 
 /* NAPOJE INFOOOOO */
@@ -355,7 +361,33 @@ h1 {
     margin-bottom: 50px;
 }
 
-
+.imgtoast {
+    height: 100px;
+    width: 200px;
+    margin-top: 0px;
+}
+.cenatoast {
+    position: fixed;
+    top: 480px; /* 10px + 20px dolů */
+}
+.imghovezipolevka {
+    height: 130px;
+    width: 100px;
+    margin-top: -15px;
+}
+    .cenahovezipolevka {
+        position: fixed;
+        top: 270px; /* 10px + 20px dolů */
+}
+.imgkurecipolevka {
+    height: 130px;
+    width: 100px;
+    margin-top: -15px;
+}
+.cenakurecipolevka {
+    position: fixed;
+    top: 270px; /* 10px + 20px dolů */
+}
 .ost {
     font-size: 30px;
     background: #fffb00;
