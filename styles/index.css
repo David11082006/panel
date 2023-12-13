@@ -1,12 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Kanit:wght@500&family=Macondo&family=Montserrat:wght@200;500;700&family=Open+Sans&family=Oswald&family=Raleway:wght@600&family=Titillium+Web:wght@300&family=Ubuntu&display=swap');
 
 body{
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    color: #fff;
 }
 
-div{
-    background-color: #4d7b99;
+div {
     text-align: center;
     margin-top: 15%;
     border-radius: 10px;
+}
+form input{
+    background-color: #161616;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    color: #fff;
+    font-size: 20px;
 }
