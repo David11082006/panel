@@ -415,13 +415,17 @@ h1 {
 
 .imgguma {
     height: 142px;
-    width: 150px;
-    margin-top: -34px;
+    width: 140px;
+    margin-top: -20px;
 }
 .imgpropiska {
-    height: 142px;
-    width: 150px;
+    height: 132px;
+    width: 140px;
     margin-top: -34px;
+}
+.cenapropiska {
+    position: fixed;
+    top: 260px; /* 10px + 20px dolů */
 }
 .imgpravitko {
     height: 142px;
