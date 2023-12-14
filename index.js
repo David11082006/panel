@@ -85,6 +85,7 @@ app.listen(port, () => {//spustni serveru
           return;
         }
         console.log(results);
+        
       })
       response.send(`Uživatele byli vloženi do DB`)
      
