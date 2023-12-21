@@ -45,6 +45,22 @@ app.get('/', (req, res) => {//home routa
 
 })
 
+app.get('/customers', (req, res) => {//home routa
+
+  con.connect(function(err) {
+      if (err) throw err;
+      con.query("SELECT * FROM customers", function (err, result, fields) {
+        if (err) throw err;
+        console.log(result);
+        res.render('index', { result });
+      });
+    });
+
+})
+
+ 
+
+
 app.get('/panel', (req, res) => {
 
   con.connect(function(err) {
@@ -87,7 +103,7 @@ app.listen(port, () => {//spustni serveru
         console.log(results);
         
       })
-      response.send(`Uživatele byli vloženi do DB`)
+      response.redirect(`/createuser`)
 
 
      
