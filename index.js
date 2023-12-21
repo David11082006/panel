@@ -1,4 +1,15 @@
+/*connection.connect();
 
+const query = 'SELECT * FROM ваша_таблица';
+connection.query(query, (error, results, fields) => {
+  if (error) throw error;
+  
+  // Ваши результаты здесь (results)
+  
+  connection.end();
+});  
+
+*/
 
 const express = require('express')//import express fw
 const app = express()//spusteni expresu
