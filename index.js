@@ -1,15 +1,4 @@
-/*connection.connect();
 
-const query = 'SELECT * FROM ваша_таблица';
-connection.query(query, (error, results, fields) => {
-  if (error) throw error;
-  
-  // Ваши результаты здесь (results)
-  
-  connection.end();
-});  
-
-*/
 
 const express = require('express')//import express fw
 const app = express()//spusteni expresu
@@ -83,6 +72,12 @@ app.get('/panel', (req, res) => {
 })
 
 
+// ... (váš stávající kód)
+
+app.get('/favicon.ico', (req, res) => {
+  res.status(204); // No Content
+});
+
 
 
 app.listen(port, () => {//spustni serveru
@@ -112,9 +107,10 @@ app.listen(port, () => {//spustni serveru
           return;
         }
         console.log(results);
+        response.send(`Uživatele byli vloženi do DB`)
         
       })
-      response.redirect(`/createuser`)
+      
 
 
      
