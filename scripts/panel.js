@@ -1,3 +1,8 @@
+function ShowNav(content){
+    $("#content-"+!content).hide();    
+    $("#"+content).toggle();  
+}
+
 
 $(document).ready(function () {
 
