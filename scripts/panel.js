@@ -1,7 +1,7 @@
-function ShowNav(content){
-    $("#content-"+!content).hide();    
-    $("#"+content).toggle();  
-}
+// function ShowNav(content){
+//     $("#content-"+!content).hide();    
+//     $("#"+content).toggle();  
+// }
 
 
 $(document).ready(function () {
@@ -9,24 +9,19 @@ $(document).ready(function () {
     $("#potreby, #dezerty, #napoje, #rychle, .milaInfo, .cornyInfo, .snickersInfo, .twixInfo, .bountyInfo, .mentosInfo, .bebeInfo, .tictacInfo ").hide();
   
     $("#navSnacks").click(function () {
-      $("#snacks").show();
-      $("#dezerty, #napoje, #rychle, #potreby").hide();
+      $("#snacks").show().siblings().hide();
     });
     $("#navDeserts").click(function () {
-      $("#dezerty").show();
-      $("#snacks, #napoje, #rychle, #potreby").hide();
+      $("#dezerty").show().siblings().hide();
     });
     $("#navDrinks").click(function () {
-      $("#napoje").show();
-      $("#snacks, #dezerty, #rychle, #potreby").hide();
+      $("#napoje").show().siblings().hide();
     });
     $("#navFastFood").click(function () {
-      $("#rychle").show();
-      $("#dezerty, #napoje, #snacks, #potreby").hide();
+      $("#rychle").show().siblings().hide();
     });
     $("#navPotreby").click(function () {
-      $("#potreby").show();
-      $("#dezerty, #napoje, #snacks, #rychle").hide();
+      $("#potreby").show().siblings().hide();
     });
   
     /* SHOVAT INFO PO KLIKNUTI NAV */
