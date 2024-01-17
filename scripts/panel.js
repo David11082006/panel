@@ -3,6 +3,8 @@
 //   $(target).show().siblings(".content").hide();
 // });
 
+// https://javascript.plainenglish.io/how-to-replace-text-inside-a-div-element-with-javascript-fe1c01872301
+
 $(document).ready(function () {
 
   $("*").click(function(event) {
