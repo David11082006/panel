@@ -1,4 +1,7 @@
-
+// $(".navButton").click(function () {
+//   var target = $(this).data("target");
+//   $(target).show().siblings(".content").hide();
+// });
 
 $(document).ready(function () {
 

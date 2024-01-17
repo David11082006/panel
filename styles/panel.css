@@ -9,78 +9,21 @@ body {
     text-align: center;
 }
 
-
-
 #nav {
     float: left;
     width: 160px;
     height: 800px;
 }
 
-#navSnacks {
-    background: rgb(255, 186, 9);
-    background: linear-gradient(90deg, rgba(255, 186, 9, 1) 32%, rgba(238, 238, 24, 1) 100%);
-    border-radius: 6px;
-    margin-top: -22px;
-    margin-bottom: 22px;
-    font-size: 25px;
-    width: 150px;
-    height: 100px;
-}
-
-#navDeserts {
-    background: rgb(246, 236, 255);
-    background: radial-gradient(circle, rgb(255, 230, 191) 0%, rgb(255, 149, 199) 100%);
-    border-radius: 6px;
-    margin-top: -22px;
-    margin-bottom: 22px;
-    font-size: 25px;
-    width: 150px;
-    height: 100px;
-}
-
-
-#navDrinks {
-    background: rgb(255, 186, 9);
-    background: linear-gradient(22deg, rgba(118, 176, 255, 1) 0%, rgba(130, 255, 169, 1) 100%);
-    border-radius: 6px;
-    margin-top: -22px;
-    margin-bottom: 22px;
-    font-size: 25px;
-    width: 150px;
-    height: 100px;
-}
-
-
-#navFastFood {
-    background: rgb(246, 236, 255);
-    background: rgb(255, 186, 9);
-    background: linear-gradient(22deg, rgba(97, 255, 85, 1) 0%, rgba(226, 255, 101, 1) 100%);
-    border-radius: 6px;
-    margin-top: -22px;
-    margin-bottom: 22px;
-    font-size: 25px;
-    width: 150px;
-    height: 100px;
-}
-
-#navPotreby {
-    background: rgb(209, 23, 23);
-    background: radial-gradient(circle, rgba(209, 23, 23, 1) 0%, rgba(209, 23, 23, 1) 100%);
-    border-radius: 6px;
-    margin-top: -22px;
-    margin-bottom: 22px;
-    font-size: 25px;
-    width: 150px;
-    height: 100px;
-}
-
-/*uvedomit si vysku full HD rozliseni */
 .navItem {
-    width: 183px;
-    height: 168px;
-
+    border-radius: 6px;
+    margin-top: -22px;
+    margin-bottom: 22px;
+    font-size: 25px;
+    width: 150px;
+    height: 100px;
 }
+
 
 #content {
     float: left;
@@ -89,91 +32,48 @@ body {
     margin-top: 13px;
 }
 
-.snacksItem {
-    float: left;
-    width: 307px;
-    /*307*/
-    height: 300px;
-    background: rgb(255, 186, 9);
-    background: linear-gradient(90deg, rgba(255, 186, 9, 1) 32%, rgba(238, 238, 24, 1) 100%);
-    border-radius: 6px;
-    margin: 5px;
-    width: 200px;
-    height: 200px;
-}
-
-.dezetryItem {
-    float: left;
-    width: 307px;
-    height: 300px;
-    background: rgb(246, 236, 255);
-    background: radial-gradient(circle, rgb(255, 230, 191) 0%, rgb(255, 149, 199) 100%);
-    border-radius: 6px;
-    margin: 5px;
-    width: 200px;
-    height: 200px;
-}
-
-.napojeItem {
-    float: left;
-    width: 307px;
-    height: 300px;
-    background: rgb(255, 186, 9);
-    background: linear-gradient(22deg, rgba(118, 176, 255, 1) 0%, rgba(130, 255, 169, 1) 100%);
-    border-radius: 6px;
-    margin: 5px;
-    width: 200px;
-    height: 200px;
-}
-
-.rychleItem {
-    float: left;
-    width: 307px;
-    height: 300px;
-    background: rgb(255, 186, 9);
-    background: linear-gradient(22deg, rgba(97, 255, 85, 1) 0%, rgba(226, 255, 101, 1) 100%);
-    border-radius: 6px;
-    margin: 5px;
-    width: 200px;
-    height: 200px;
-}
+.snacksItem,
+.dezetryItem,
+.napojeItem,
+.rychleItem,
 .potrebyItem {
     float: left;
     width: 307px;
     height: 300px;
-    background: rgb(255, 186, 9);
-    background: linear-gradient(22deg, rgb(167, 22, 17) 0%, rgb(209, 23, 23, 1) 100%);
     border-radius: 6px;
     margin: 5px;
     width: 200px;
     height: 200px;
 }
-#snacks {
-    background: rgb(255, 186, 9);
+
+.snacksItem {
     background: linear-gradient(90deg, rgba(255, 186, 9, 1) 32%, rgba(238, 238, 24, 1) 100%);
-    border-radius: 6px;
+    ;
 }
 
-#dezerty {
-    background: rgb(246, 255, 89);
-    background: radial-gradient(circle, rgba(246, 255, 89, 1) 0%, rgba(255, 128, 128, 1) 100%);
-    border-radius: 6px;
+.dezetryItem {
+    background: radial-gradient(circle, rgb(255, 230, 191) 0%, rgb(255, 149, 199) 100%);
+
 }
 
-#napoje {
-    background: rgb(118, 176, 255);
+.napojeItem {
     background: linear-gradient(22deg, rgba(118, 176, 255, 1) 0%, rgba(130, 255, 169, 1) 100%);
-    border-radius: 6px;
+
 }
 
-#rychle {
-    background: rgb(97, 255, 85);
+.rychleItem {
     background: linear-gradient(22deg, rgba(97, 255, 85, 1) 0%, rgba(226, 255, 101, 1) 100%);
-    border-radius: 6px;
 }
+
+.potrebyItem {
+    background: linear-gradient(22deg, rgb(167, 22, 17) 0%, rgb(209, 23, 23, 1) 100%);
+}
+
+#snacks,
+#dezerty,
+#napoje,
+#rychle,
 #potreby {
-    background: rgb(97, 255, 85);
-    background: linear-gradient(22deg, rgba(97, 255, 85, 1) 0%, rgba(226, 255, 101, 1) 100%);
     border-radius: 6px;
 }
 
@@ -213,36 +113,43 @@ h1 {
     background-color: #fff;
     border-radius: 30px;
     margin-top: -14px;
-    
+
 }
+
 .colacena {
-    top: 290px; /* 10px + 20px dolů */
+    top: 290px;
+    /* 10px + 20px dolů */
 }
+
 .colaimg {
     height: 110px;
     width: 100px;
-    left: 201px; /* 10px + 20px doprava */
+    left: 201px;
+    /* 10px + 20px doprava */
     margin-top: -5px;
 }
+
 .imgkofola {
     height: 110px;
     left: 340px;
 }
+
 .cenakofola {
-    
-    top: 290px; /* 10px + 20px dolů */
+
+    top: 290px;
+    /* 10px + 20px dolů */
 }
+
 .cenacapri-sun {
-    
+
     left: 595px;
     margin-top: 5px;
 }
-.imgcapri-sun {
 
-}
 .imgriver {
-width: 90px;
+    width: 90px;
 }
+
 .imgcorny {
     width: 159px;
     height: 84px;
@@ -327,6 +234,7 @@ width: 90px;
     margin-right: 20px;
     margin-bottom: 50px;
 }
+
 .imgflorida {
     height: 130px;
     width: 230px;
@@ -374,25 +282,34 @@ width: 90px;
     width: 200px;
     margin-top: 0px;
 }
+
 .cenatoast {
-    top: 480px; /* 10px + 20px dolů */
+    top: 480px;
+    /* 10px + 20px dolů */
 }
+
 .imghovezipolevka {
     height: 130px;
     width: 100px;
     margin-top: -15px;
 }
-    .cenahovezipolevka {
-        top: 270px; /* 10px + 20px dolů */
+
+.cenahovezipolevka {
+    top: 270px;
+    /* 10px + 20px dolů */
 }
+
 .imgkurecipolevka {
     height: 130px;
     width: 100px;
     margin-top: -15px;
 }
+
 .cenakurecipolevka {
-    top: 270px; /* 10px + 20px dolů */
+    top: 270px;
+    /* 10px + 20px dolů */
 }
+
 .ost {
     font-size: 30px;
     background: #fffb00;
@@ -423,26 +340,34 @@ width: 90px;
     width: 140px;
     margin-top: -20px;
 }
+
 .imgpropiska {
     height: 132px;
     width: 140px;
     margin-top: -34px;
 }
+
 .cenapropiska {
-    top: 260px; /* 10px + 20px dolů */
+    top: 260px;
+    /* 10px + 20px dolů */
 }
+
 .imgpravitko {
     height: 142px;
     width: 221px;
-    margin-top: -34px; 
+    margin-top: -34px;
 }
+
 .kalkulackaimg {
     height: 122px;
     width: 160px;
-    top: 140px; /* 10px + 20px dolů */
-    left: 815px; /* 10px + 20px doprava */
-} 
+    top: 140px;
+    /* 10px + 20px dolů */
+    left: 815px;
+    /* 10px + 20px doprava */
+}
 
 .kalkulackacena {
-    top: 270px; /* 10px + 20px dolů */
+    top: 270px;
+    /* 10px + 20px dolů */
 }
