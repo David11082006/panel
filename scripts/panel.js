@@ -1,9 +1,7 @@
-// $(".navButton").click(function () {
-//   var target = $(this).data("target");
-//   $(target).show().siblings(".content").hide();
-// });
+function showCategory(categoryId) {
+  $("#" + categoryId).show().siblings().hide();
+}
 
-// https://javascript.plainenglish.io/how-to-replace-text-inside-a-div-element-with-javascript-fe1c01872301
 
 $(document).ready(function () {
 
@@ -12,24 +10,6 @@ $(document).ready(function () {
   })
 
     $("#potreby, #dezerty, #napoje, #rychle, .milaInfo, .cornyInfo, .snickersInfo, .twixInfo, .bountyInfo, .mentosInfo, .bebeInfo, .tictacInfo ").hide();
-  
-    $("#navSnacks").click(function () {
-      $("#snacks").show().siblings().hide();
-    });
-    $("#navDeserts").click(function () {
-      $("#dezerty").show().siblings().hide();
-    });
-    $("#navDrinks").click(function () {
-      $("#napoje").show().siblings().hide();
-    });
-    $("#navFastFood").click(function () {
-      $("#rychle").show().siblings().hide();
-    });
-    $("#navPotreby").click(function () {
-      $("#potreby").show().siblings().hide();
-    });
-  
-    /* SHOVAT INFO PO KLIKNUTI NAV */
   
     $("#navDeserts, #navSnacks, #navDrinks, #navFastFood, #navPotreby").click(function () {
       $(".milaInfo, .cornyInfo, .snickersInfo, .twixInfo, .bountyInfo, .mentosInfo, .bebeInfo, .tictacInfo, .spickaInfo, .tiramisuInfo, .roladaInfo, .venecekInfo, .laskonkaInfo, .kokoskaInfo, .vetrnikInfo, .floridaInfo, .colaInfo, .kofolaInfo, .caprisunInfo, .brambachInfo, .mattoniInfo, .cajInfo, .aquilaInfo, .riverInfo, .parekInfo, .hoveziInfo, .kureciInfo, .hamburgerInfo, .bagetaInfo, .sandwichInfo, .maggiInfo, .toastInfo, .propiskaInfo, .gumaInfo, .pravitkoInfo, .kalkulackaInfo, .nuzkyInfo").hide();
