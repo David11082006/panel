@@ -1,10 +1,10 @@
-// function ShowNav(content){
-//     $("#content-"+!content).hide();    
-//     $("#"+content).toggle();  
-// }
 
 
 $(document).ready(function () {
+
+  $("*").click(function(event) {
+    console.log(event.target)
+  })
 
     $("#potreby, #dezerty, #napoje, #rychle, .milaInfo, .cornyInfo, .snickersInfo, .twixInfo, .bountyInfo, .mentosInfo, .bebeInfo, .tictacInfo ").hide();
   

@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+
+
 /*  #  */
 body {
     background-color: #ffffff;
-    font-family: Verdana, sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-weight: 35px;
     text-align: center;
 }
