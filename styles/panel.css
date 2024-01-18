@@ -356,6 +356,9 @@ h1 {
     width: 140px;
     margin-top: -20px;
 }
+.cenaguma {
+    margin-top: 40px;
+}
 
 .imgpropiska {
     height: 132px;
@@ -386,4 +389,8 @@ h1 {
 .kalkulackacena {
     top: 270px;
     /* 10px + 20px dolů */
+}
+.cenapotreby1 {
+    position: absolute;
+    margin-top: 0%;
 }
