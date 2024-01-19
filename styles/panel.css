@@ -116,48 +116,6 @@ h1 {
 
 }
 
-.colacena {
-    
-   margin-top: 5px; /* 10px + 20px dolů */
-}
-
-.colaimg {
-    height: 110px;
-    width: 100px;
-    left: 201px;
-    /* 10px + 20px doprava */
-    margin-top: -5px;
-}
-.imgmattoni {
-    margin-top: -10px;
-    height: 120px;
-}
-.imgriver {
-    height: 120px;
-    margin-top: -10px;
-}
-.imgaquila {
-    height: 120px;
-    margin-top: -10px;
-}
-
-.imgkofola {
-    height: 110px;
-    left: 340px;
-}
-
-.cenakofola {
-
-}
-.imgcapri-sun {
-    height: 120px;
-    margin-top: -10px;
-}
-.cenacapri-sun {
-
-    left: 595px;
-    margin-top: 5px;
-}
 .imgcorny {
     width: 159px;
     height: 84px;
@@ -275,7 +233,48 @@ h1 {
     position: absolute;
     margin-top: 0%;
 }
-
+.colacena {
+    
+    margin-top: 5px; /* 10px + 20px dolů */
+ }
+ 
+ .colaimg {
+     height: 110px;
+     width: 100px;
+     left: 201px;
+     /* 10px + 20px doprava */
+     margin-top: -5px;
+ }
+ .imgmattoni {
+     margin-top: -10px;
+     height: 120px;
+ }
+ .imgriver {
+     height: 120px;
+     margin-top: -10px;
+ }
+ .imgaquila {
+     height: 120px;
+     margin-top: -10px;
+ }
+ 
+ .imgkofola {
+     height: 110px;
+     left: 340px;
+ }
+ 
+ .cenakofola {
+ 
+ }
+ .imgcapri-sun {
+     height: 120px;
+     margin-top: -10px;
+ }
+ .cenacapri-sun {
+ 
+     left: 595px;
+     margin-top: 5px;
+ }
 /* RYCHLE INFOOOOOOOO */
 
 .rychleInfo {
