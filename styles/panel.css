@@ -146,6 +146,13 @@ h1 {
     margin-right: 25px;
     margin-bottom: 50px;
 }
+.cenasnacks1 {
+    position: absolute;
+    margin-top: 0px
+}
+.cenacorny {
+    margin-top: 40px;
+}
 .imgtictac {
     width: 130px;
     height: 124px;
@@ -186,7 +193,10 @@ h1 {
     margin-right: 20px;
     margin-bottom: 50px;
 }
-
+.cenadezerty1 {
+        position: absolute;
+        margin-top: 0px
+}
 .imgflorida {
     height: 130px;
     width: 230px;
