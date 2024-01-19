@@ -277,6 +277,10 @@ h1 {
  }
 /* RYCHLE INFOOOOOOOO */
 
+.cenarychle1 {
+    position: absolute;
+    margin-top: 0%;
+}
 .rychleInfo {
     background-color: #60f454;
     position: absolute;
