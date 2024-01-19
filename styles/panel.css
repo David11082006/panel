@@ -116,42 +116,6 @@ h1 {
 
 }
 
-.imgcorny {
-    width: 159px;
-    height: 84px;
-    margin-top: -13px;
-}
-
-.imgmentos {
-    width: 159px;
-    height: 100px;
-    margin-top: 9px;
-}
-
-.imgvetrnik {
-    width: 159px;
-    height: 126px;
-    margin-top: -10px;
-
-}
-
-.imgtictac {
-    width: 130px;
-    height: 124px;
-    margin-top: -13px;
-}
-
-.imgbebe {
-    height: 142px;
-    width: 221px;
-    margin-top: -34px;
-}
-
-.imgpoliv {
-    height: 140px;
-    width: 111px;
-}
-
 .cenacorny {
     margin-top: 73px;
     font-family: Arial, Helvetica, sans-serif;
@@ -182,6 +146,28 @@ h1 {
     margin-right: 25px;
     margin-bottom: 50px;
 }
+.imgtictac {
+    width: 130px;
+    height: 124px;
+    margin-top: -13px;
+}
+
+.imgbebe {
+    height: 142px;
+    width: 221px;
+    margin-top: -34px;
+}
+.imgcorny {
+    width: 159px;
+    height: 84px;
+    margin-top: -13px;
+}
+
+.imgmentos {
+    width: 159px;
+    height: 100px;
+    margin-top: 9px;
+}
 
 /* 
 /* DEZERTY INFOOO */
@@ -207,7 +193,11 @@ h1 {
     margin-top: -15px;
     margin-left: -15px;
 }
-
+.imgvetrnik {
+    width: 159px;
+    height: 126px;
+    margin-top: -10px;
+}
 
 /* NAPOJE INFOOOOO */
 
