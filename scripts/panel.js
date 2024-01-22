@@ -82,7 +82,7 @@ $(document).ready(function () {
     });
     $(".floridaItem").click(function () {
       $(".dezertsInfo").hide();
-      $(".fporidaInfo").show();
+      $(".floridaInfo").show();
     });
   
     /* NAPOJE INFOOOO */
