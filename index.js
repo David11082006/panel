@@ -99,7 +99,7 @@ app.listen(port, () => {//spustni serveru
   app.post('/createuser', function (request, response, next) {
     console.log(request.body)
       // SQL dotaz pro vložení dat do databáze
-      var sql = `INSERT INTO orders (order, customers_id_ck) VALUES ('${request.body.order}', '${request.body.customers_id_ck}' )`;
+      var sql = `INSERT INTO orders (product_id, category, title, image, price, info) VALUES ('${request.body.product_id}', '${request.body.category}', '${request.body.title}', '${request.body.image}', '${request.body.price}', '${request.body.info}' )`;
      
       con.query(sql, (error, results, fields) => {
         if (error) {
