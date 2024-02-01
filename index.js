@@ -36,7 +36,7 @@ app.get('/', (req, res) => {//home routa
 
     con.connect(function(err) {
         if (err) throw err;
-        con.query("SELECT * FROM orders", function (err, result, fields) {
+        con.query("SELECT * FROM products", function (err, result, fields) {
           if (err) throw err;
           console.log(result);
           res.render('index', { result });
