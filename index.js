@@ -32,18 +32,18 @@ con.connect(function(err) {
 });
 
 
-app.get('/', (req, res) => {//home routa
+// app.get('/', (req, res) => {//home routa
 
-    con.connect(function(err) {
-        if (err) throw err;
-        con.query("SELECT * FROM products", function (err, result, fields) {
-          if (err) throw err;
-          console.log(result);
-          res.render('index', { result });
-        });
-      });
+//     con.connect(function(err) {
+//         if (err) throw err;
+//         con.query("SELECT * FROM products", function (err, result, fields) {
+//           if (err) throw err;
+//           console.log(result);
+//           res.render('index', { result });
+//         });
+//       });
 
-})
+// })
 
 // app.get('/customers', (req, res) => {//home routa
 
@@ -65,7 +65,7 @@ app.get('/panel', (req, res) => {
 
   con.connect(function(err) {
     
-        res.render('panel');
+        res.render('panel2');
       
     });
 
@@ -90,7 +90,7 @@ app.listen(port, () => {//spustni serveru
   app.post('/createuser', function (request, response, next) {
     console.log(request.body)
       // SQL dotaz pro vložení dat do databáze
-      var sql = `INSERT INTO orders (product_id, category, title, image, price, info) VALUES ('${request.body.product_id}', '${request.body.category}', '${request.body.title}', '${request.body.image}', '${request.body.price}', '${request.body.info}' )`;
+      var sql = `INSERT INTO products (product_id, category, title, image, price, info) VALUES ('${request.body.product_id}', '${request.body.category}', '${request.body.title}', '${request.body.image}', '${request.body.price}', '${request.body.info}' )`;
      
       con.query(sql, (error, results, fields) => {
         if (error) {
