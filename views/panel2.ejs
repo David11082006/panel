@@ -50,6 +50,15 @@
 
 
     <div id="content">
+
+
+        <ul>
+            <% result.forEach(function(product) { %>
+               <li> Name:<%= product.title %> Course:<%= product.price %></li>
+            <% }); %> 
+           </ul>
+
+
         <div id="snacks"
             style="background: linear-gradient(90deg, rgba(255, 186, 9, 1) 32%, rgba(238, 238, 24, 1) 100%);">
             <div class="snacksItem milaItem">

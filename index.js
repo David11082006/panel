@@ -45,18 +45,18 @@ app.get('/', (req, res) => {//home routa
 
 })
 
-app.get('/customers', (req, res) => {//home routa
+// app.get('/customers', (req, res) => {//home routa
 
-  con.connect(function(err) {
-      if (err) throw err;
-      con.query("SELECT * FROM products", function (err, result, fields) {
-        if (err) throw err;
-        console.log(result);
-        res.render('panel2', { result });
-      });
-    });
+//   con.connect(function(err) {
+//       if (err) throw err;
+//       con.query("SELECT * FROM products", function (err, result, fields) {
+//         if (err) throw err;
+//         console.log(result);
+//         res.render('panel2', { result });
+//       });
+//     });
 
-})
+// })
 
  
 
@@ -85,15 +85,6 @@ app.listen(port, () => {//spustni serveru
 })
 
 
-
-
-  app.get("/newuser", (reg, res) => {
-    res.render("newuser");
-  })
-
-  // app.get("/createuser", (reg, res) => {
-  //   res.render("createuser");
-  // })
   
 
   app.post('/createuser', function (request, response, next) {
@@ -107,7 +98,7 @@ app.listen(port, () => {//spustni serveru
           return;
         }
         console.log(results);
-        response.send(`Uživatele byli vloženi do DB`)
+        response.send(`Produkty byli vloženi do DB`)
         
       })
       
