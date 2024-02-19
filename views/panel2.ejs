@@ -1,4 +1,4 @@
-<!DOCTYPE html>   
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -52,12 +52,20 @@
     <div id="content">
 
 
-        <ul>
+        <!-- <ul>
             <% result.forEach(function(product) { %>
                <li> Name:<%= products.title %> Course:<%= products.price %></li>
             <% }); %> 
-           </ul>
+           </ul> -->
 
+        <?php
+           $products = new products("product_id, category", "title", "image", "price", "info");
+           $query = "SELECT * FROM products";
+           $result = $products->query($query);
+           while($row = $result->fetch_array()){
+            echo '<div style="name:'.$row[title].';price:'.$row[price].';"><img src="'.$row[image].'"></div>';
+           }
+           ?>
 
         <!-- <div id="snacks"
             style="background: linear-gradient(90deg, rgba(255, 186, 9, 1) 32%, rgba(238, 238, 24, 1) 100%);">
