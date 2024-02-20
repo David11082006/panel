@@ -61,7 +61,7 @@ con.connect(function(err) {
  
 
 
-app.get('/panel', (req, res) => {
+app.get('/', (req, res) => {
 
   con.connect(function(err) {
     
