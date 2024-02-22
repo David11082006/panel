@@ -255,23 +255,30 @@ h1 {
  }
  .imgriver {
      height: 120px;
+     width: 50px;
      margin-top: -10px;
  }
  .imgaquila {
      height: 120px;
      margin-top: -10px;
  }
- 
+ .imgbrambach { 
+    height: 120px;
+    width: 120px;
+    padding-top: 15px;
+    margin-top: -30px;
+ }
  .imgkofola {
      height: 110px;
      left: 340px;
  }
  
  .cenakofola {
- 
+ color: black;
  }
  .imgcapri-sun {
      height: 120px;
+     width: 135px;
      margin-top: -10px;
  }
  .cenacapri-sun {
@@ -312,13 +319,14 @@ h1 {
 }
 
 .imghovezipolevka {
-    height: 130px;
+    height: 120px;
     width: 100px;
     margin-top: -15px;
 }
 
 .cenahovezipolevka {
     top: 270px;
+    
     /* 10px + 20px dolů */
 }
 

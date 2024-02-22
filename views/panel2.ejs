@@ -8,8 +8,7 @@
     <script src="panel.js"></script>
 </head>
 
-<body>
-
+<body background="https://wallpapers.com/images/hd/food-4k-m37wpodzrcbv5gvw.jpg" >
     <h1 class="h1buf">MENU</h1>
 
     <div id="nav">
@@ -50,20 +49,20 @@
 
 
     <div id="content">
-
+        <!--<?php
+        $products = new products("product_id, category", "title", "image", "price", "info");
+        $query = "SELECT * FROM products";
+        $result = $products->query($query);
+        while($row = $result->fetch_array()){
+         echo '<div style="name:'.$row[title].';price:'.$row[price].';"><img src="'.$row[image].'"></div>';
+        }
+        ?> -->
 
         
 
-        <?php
-           $products = new products("product_id, category", "title", "image", "price", "info");
-           $query = "SELECT * FROM products";
-           $result = $products->query($query);
-           while($row = $result->fetch_array()){
-            echo '<div style="name:'.$row[title].';price:'.$row[price].';"><img src="'.$row[image].'"></div>';
-           }
-           ?>
+        
 
-        <!-- <div id="snacks"
+        <div id="snacks"
             style="background: linear-gradient(90deg, rgba(255, 186, 9, 1) 32%, rgba(238, 238, 24, 1) 100%);">
             <div class="snacksItem milaItem">
                 <h1>Mila</h1>
@@ -253,8 +252,8 @@
 
             <div class="napojeItem brambachItem">
                 <h1>Bad Brambacher</h1>
-                <img src="https://bohemia-water.s17.cdn-upgates.com/_cache/9/a/9a06b0c3c506a9ab0cf06681c76a781b-gl-4-druhy.png"
-                    alt="Mars image" class="imgli">
+                <img src="https://www.konsum-leipzig.de/media/image/7e/78/39/DV019_4017434000144_VORzC6AW1fz6E1x2.png"
+                    alt="bad Brambacher image" class="imgli imgbrambach">
                 <h6 class="cena cenanapoj1">24,00 Kč</h6>
             </div>
 
@@ -288,7 +287,7 @@
 
             <div class="napojeItem riverItem">
                 <h1>River</h1>
-                <img src="https://image.influenster.com/eyJidWNrZXQiOiAiaW5mbHVlbnN0ZXJfcHJvZHVjdGlvbiIsICJrZXkiOiAibWVkaWEvcHJvZHVjdC9pbWFnZS9mZmFjOTI0OC1mNWM3LTRjM2UtOWQzOC1mNmQ2YWViNDllN2IucG5nIiwgImVkaXRzIjogeyJyb3RhdGUiOiBudWxsLCAicmVzaXplIjogeyJ3aWR0aCI6IDc1MCwgImhlaWdodCI6IDc1MCwgImZpdCI6ICJpbnNpZGUiLCAiYmFja2dyb3VuZCI6IHsiciI6IDEsICJnIjogMSwgImIiOiAxLCAiYWxwaGEiOiAwfSwgIndpdGhvdXRFbmxhcmdlbWVudCI6IHRydWV9fSwgImV4dGVuZCI6IHt9fQ=="
+                <img src="https://photo.maspex.com/img/thumbs/w1920h1920q100/resources/products/3D_River_Tonic_0_5l.png"
                     alt="Mars image" class="imgli imgriver">
                 <h6 class="cena cenanapoj2">20,00 Kč</h6>
             </div>
@@ -427,7 +426,7 @@
 
 
 
-        </div> -->
+        </div> 
 
 
 </html>
