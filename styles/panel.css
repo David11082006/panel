@@ -268,6 +268,9 @@ h1 {
     padding-top: 15px;
     margin-top: -30px;
  }
+ .cenabrambach{
+    margin-top: 6px;
+}
  .imgkofola {
      height: 110px;
      left: 340px;
@@ -319,7 +322,7 @@ h1 {
 }
 
 .imghovezipolevka {
-    height: 120px;
+    height: 125px;
     width: 100px;
     margin-top: -15px;
 }
@@ -331,7 +334,7 @@ h1 {
 }
 
 .imgkurecipolevka {
-    height: 130px;
+    height: 125px;
     width: 100px;
     margin-top: -15px;
 }
