@@ -7,7 +7,6 @@ const path = require('path');//pro manipulaci s cestami, ať už se jedná o abs
 const bodyParser = require('body-parser');//imort bodyParseru
 app.use(bodyParser.urlencoded({ extended: false }));//dekoduje data poslana pres POST
 
-/*fdfsf*/
 
 app.use(express.static(path.join(__dirname, 'scripts')))
 app.use(express.static(path.join(__dirname, 'styles')))
@@ -32,24 +31,11 @@ con.connect(function(err) {
 });
 
 
-// app.get('/', (req, res) => {//home routa
-
-//     con.connect(function(err) {
-//         if (err) throw err;
-//         con.query("SELECT * FROM products", function (err, result, fields) {
-//           if (err) throw err;
-//           console.log(result);
-//           res.render('index', { result });
-//         });
-//       });
-
-// })
-
 // app.get('/customers', (req, res) => {//home routa
 
 //   con.connect(function(err) {
 //       if (err) throw err;
-//       con.query("SELECT * FROM products", function (err, result, fields) {
+//       con.query("SELECT * FROM customers", function (err, result, fields) {
 //         if (err) throw err;
 //         console.log(result);
 //         res.render('panel2', { result });
@@ -72,7 +58,7 @@ app.get('/', (req, res) => {
 })
 
 
-app.get('/test', (req, res) => {//home routa
+app.get('/test', (req, res) => {
 
   con.connect(function(err) {
       if (err) throw err;
@@ -86,15 +72,15 @@ app.get('/test', (req, res) => {//home routa
 })
 
 
-// ... (váš stávající kód)
+
 
 app.get('/favicon.ico', (req, res) => {
-  res.status(204); // No Content
+  res.status(204); 
 });
 
 
 
-app.listen(port, () => {//spustni serveru
+app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
 
@@ -103,7 +89,7 @@ app.listen(port, () => {//spustni serveru
 
   app.post('/createuser', function (request, response, next) {
     console.log(request.body)
-      // SQL dotaz pro vložení dat do databáze
+
       var sql = `INSERT INTO products (product_id, category, title, image, price, info) VALUES ('${request.body.product_id}', '${request.body.category}', '${request.body.title}', '${request.body.image}', '${request.body.price}', '${request.body.info}' )`;
      
       con.query(sql, (error, results, fields) => {
