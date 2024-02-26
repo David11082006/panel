@@ -72,6 +72,20 @@ app.get('/', (req, res) => {
 })
 
 
+app.get('/test', (req, res) => {//home routa
+
+  con.connect(function(err) {
+      if (err) throw err;
+      con.query("SELECT * FROM products", function (err, result, fields) {
+        if (err) throw err;
+        console.log(result);
+        res.render('test', { result });
+      });
+    });
+
+})
+
+
 // ... (váš stávající kód)
 
 app.get('/favicon.ico', (req, res) => {

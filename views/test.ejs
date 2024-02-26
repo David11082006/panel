@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabulka</title>
+    <link rel="stylesheet" href="test.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tabulka</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Snacks</th>
+                <th>Dezerty</th>
+                <th>Nápoje</th>
+                <th>Rychlé jídlo</th>
+                <th>Školní potřeby</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% result.forEach(function(item) { %>
+                <tr>
+                    <td ><%= item.title %></td>
+                    <td><%= item.image %></td>
+                    <td><%= item.price %></td>
+                    <td><%= item.info %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</body>
+</html>
