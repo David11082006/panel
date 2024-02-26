@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabulka</title>
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="panel.css">
     <style>
         table {
             width: 100%;
             border-collapse: collapse;
         }
-        th, td {
+
+        th,
+        td {
             padding: 8px;
             text-align: left;
             border-bottom: 1px solid #ddd;
         }
     </style>
 </head>
+
 <body>
-    <h2>Tabulka</h2>
+    <h1>MENU</h1>
     <table>
         <thead>
-            <tr>
-                <th>Snacks</th>
+            <tr id="nav">
+                <th>
+                    <div id="navSnacks" class="navItem" onclick="showCategory('snacks')"
+                        style="background: linear-gradient(90deg, rgba(255, 186, 9, 1) 32%, rgba(238, 238, 24, 1) 100%)">
+                        <h6>Snacks</h6>
+                        <img src="https://images.squarespace-cdn.com/content/v1/54f681f1e4b094fe88e5e857/1442519748040-XPIMZGHJZ6P7WCGAD5O4/snacks.png?format=2500w"
+                            class="img" alt="Snacks nav img">
+                    </div>
+                </th>
                 <th>Dezerty</th>
                 <th>Nápoje</th>
                 <th>Rychlé jídlo</th>
@@ -32,13 +43,22 @@
         <tbody>
             <% result.forEach(function(item) { %>
                 <tr>
-                    <td ><%= item.title %></td>
-                    <td><%= item.image %></td>
-                    <td><%= item.price %></td>
-                    <td><%= item.info %></td>
+                    <td>
+                        <%= item.title %>
+                    </td>
+                    <td>
+                        <%= item.image %>
+                    </td>
+                    <td>
+                        <%= item.price %>
+                    </td>
+                    <td>
+                        <%= item.info %>
+                    </td>
                 </tr>
-            <% }); %>
+                <% }); %>
         </tbody>
     </table>
 </body>
+
 </html>
