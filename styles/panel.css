@@ -76,7 +76,12 @@ body {
 #potreby {
     border-radius: 6px;
 }
-
+.imgsnacks{
+    width: 125px;
+    height: 100px;
+    margin-left: 6px;
+    margin-top: -57px;
+}
 .img {
     width: 70px;
     height: 61px;

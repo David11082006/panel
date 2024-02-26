@@ -6,17 +6,24 @@
     <title>Dotykový panel</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="panel.js"></script>
+    <style>
+        body{
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+      </style>
 </head>
 
 <body background="https://wallpapers.com/images/hd/food-4k-m37wpodzrcbv5gvw.jpg" >
     <h1 class="h1buf">MENU</h1>
-
+    <!--background="https://wallpapers.com/images/hd/food-4k-m37wpodzrcbv5gvw.jpg"-->
     <div id="nav">
         <div id="navSnacks" class="navItem" onclick="showCategory('snacks')"
             style="background: linear-gradient(90deg, rgba(255, 186, 9, 1) 32%, rgba(238, 238, 24, 1) 100%)">
             <h6>Snacks</h6>
             <img src="https://images.squarespace-cdn.com/content/v1/54f681f1e4b094fe88e5e857/1442519748040-XPIMZGHJZ6P7WCGAD5O4/snacks.png?format=2500w"
-                alt="Snacks image" class="img">
+                alt="Snacks image" class="imgsnacks">
         </div>
         <div id="navDeserts" class="navItem" onclick="showCategory('dezerty')"
             style="background: radial-gradient(circle, rgb(255, 230, 191) 0%, rgb(255, 149, 199) 100%);">
