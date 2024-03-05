@@ -31,27 +31,64 @@ con.connect(function(err) {
 });
 
 
-// app.get('/customers', (req, res) => {//home routa
-
-//   con.connect(function(err) {
-//       if (err) throw err;
-//       con.query("SELECT * FROM customers", function (err, result, fields) {
-//         if (err) throw err;
-//         console.log(result);
-//         res.render('panel2', { result });
-//       });
-//     });
-
-// })
-
- 
-
-
 app.get('/', (req, res) => {
 
   con.connect(function(err) {
     
         res.render('panel2');
+      
+    });
+
+})
+
+app.get('/snacks', (req, res) => {
+
+  con.connect(function(err) {
+    if (err) throw err;
+    con.query("SELECT * FROM products WHERE category=snacks", function (err, result, fields) {
+      if (err) throw err;
+      console.log(result);
+      res.render('test', { result });
+    });
+  });
+
+})
+
+app.get('/deserts', (req, res) => {
+
+  con.connect(function(err) {
+    
+        res.render('deserts');
+      
+    });
+
+})
+
+app.get('/drinks', (req, res) => {
+
+  con.connect(function(err) {
+    
+        res.render('drinks');
+      
+    });
+
+})
+app.get('/fastfood', (req, res) => {
+
+  con.connect(function(err) {
+    
+        res.render('fastfood');
+      
+    });
+
+
+})
+
+app.get('/things', (req, res) => {
+
+  con.connect(function(err) {
+    
+        res.render('things');
       
     });
 
