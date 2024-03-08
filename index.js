@@ -7,13 +7,13 @@ const path = require('path');//pro manipulaci s cestami, ať už se jedná o abs
 const bodyParser = require('body-parser');//imort bodyParseru
 app.use(bodyParser.urlencoded({ extended: false }));//dekoduje data poslana pres POST
 
-
 app.use(express.static(path.join(__dirname, 'scripts')))
 app.use(express.static(path.join(__dirname, 'styles')))
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
+//MYSQL
 
 var mysql = require('mysql2');
 
@@ -30,6 +30,9 @@ con.connect(function(err) {
   console.log("Connected!");
 });
 
+//:MYSQL
+
+//GET
 
 app.get('/', (req, res) => {
 
@@ -45,7 +48,7 @@ app.get('/snacks', (req, res) => {
 
   con.connect(function(err) {
     if (err) throw err;
-    con.query("SELECT * FROM products WHERE category=snacks", function (err, result, fields) {
+    con.query("SELECT * FROM products WHERE category='snacks'", function (err, result, fields) {
       if (err) throw err;
       console.log(result);
       res.render('test', { result });
@@ -115,14 +118,9 @@ app.get('/favicon.ico', (req, res) => {
   res.status(204); 
 });
 
+//:GET
 
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
-
-
-  
+//POST
 
   app.post('/createuser', function (request, response, next) {
     console.log(request.body)
@@ -143,4 +141,10 @@ app.listen(port, () => {
 
      
     })
-    
+
+//:POST
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
+
