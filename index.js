@@ -1,8 +1,6 @@
-
-
-const express = require('express')
-const app = express()/
-const port = 80
+const express = require('express');
+const app = express();
+const port = 80;
 const path = require('path');
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -50,7 +48,6 @@ app.get('/snacks', (req, res) => {
     if (err) throw err;
     con.query("SELECT * FROM products WHERE category='snacks'", function (err, result, fields) {
       if (err) throw err;
-      console.log(result);
       res.render('test', { result });
     });
   });
