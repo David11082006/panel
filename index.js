@@ -1,11 +1,11 @@
 
 
-const express = require('express')//import express fw
-const app = express()//spusteni expresu
-const port = 80//definovani portu
-const path = require('path');//pro manipulaci s cestami, ať už se jedná o absolutní cesty, relativní cesty
-const bodyParser = require('body-parser');//imort bodyParseru
-app.use(bodyParser.urlencoded({ extended: false }));//dekoduje data poslana pres POST
+const express = require('express')
+const app = express()/
+const port = 80
+const path = require('path');
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(express.static(path.join(__dirname, 'scripts')))
 app.use(express.static(path.join(__dirname, 'styles')))
