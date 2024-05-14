@@ -1,8 +1,3 @@
-function showCategory(categoryId) {
-  $("#" + categoryId).show().siblings().hide();
-}
-
-
 $(document).ready(function () {
 
   $("*").click(function(event) {
