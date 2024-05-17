@@ -12,7 +12,10 @@ body {
 #nav {
     float: left;
     width: 160px;
-    height: 800px;
+}
+
+#nav th{
+    width: 50px;
 }
 
 .navItem {
@@ -25,7 +28,7 @@ body {
 }
 
 
-#content {
+.content {
     float: left;
     width: 1270px;
     height: 800px;

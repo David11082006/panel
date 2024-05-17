@@ -48,7 +48,7 @@ app.get('/snacks', (req, res) => {
     if (err) throw err;
     con.query("SELECT * FROM products WHERE category='snacks'", function (err, result, fields) {
       if (err) throw err;
-      res.render('test', { result });
+      res.render('snacks', { result });
     });
   });
 
