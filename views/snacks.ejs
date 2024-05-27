@@ -62,12 +62,30 @@
         <thead>
             <th>
         
-                    <div class="snacksItem milaItem">
+                    <!-- <div class="snacksItem milaItem">
                         <h1>Mila</h1>
                         <img src="https://www.plnalednice.cz/fotky91537/fotos/_vyr_1014_Mila_50g_SB_bocny_pohlad-1.png"
                             alt="Mila image" class="imgli">
                         <h6 class="cena cenasnacks1">15,00 Kč</h6>
-                    </div>
+                    </div> -->
+
+                    <ul class="menu-items">
+                        <% if (result && result.length > 0) { %>
+                            <% result.forEach(function(products) { %>
+                                <li>
+                                    <div class="snacksItem <%= products.category %>Item">
+                                        <h1><%= products.title %></h1>
+                                        <img src="<%= products.image %>"
+                                            alt=" <%= products.title %> image" class="imgli">
+                                        <h6 class="cena cenasnacks1">15,00 Kč</h6>
+                                    </div>
+                                </li>
+                            <% }); %>
+                        <% } else { %>
+                            <li>No item found</li>
+                        <% } %>
+                    </ul>
+
             </th>
         </thead>
     </table>

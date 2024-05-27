@@ -420,3 +420,11 @@ h1 {
     position: absolute;
     margin-top: 0%;
 }
+
+.menu-items{
+    list-style: none;
+}
+
+.menu-items ul li div{
+    display: inline-block;
+}
